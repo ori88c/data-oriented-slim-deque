@@ -1,0 +1,59 @@
+{
+  "name": "data-oriented-slim-deque",
+  "version": "1.0.0",
+  "description": "A slim and efficient in-memory Deque (doubly-ended queue) for Node.js projects, designed with Data-Oriented Design principles and implemented using a cyclic buffer to optimize memory layout through sequential item allocation. A notable real-world use case is stream processing with constraints: maintaining the minimum or maximum item in a data stream while evicting irrelevant items based on criteria such as age or relevance.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ori88c/data-oriented-slim-deque.git"
+  },
+  "contributors": [
+    "Ori Cohen (https://github.com/ori88c/)"
+  ],
+  "homepage": "https://github.com/ori88c/data-oriented-slim-deque#readme",
+  "author": "Ori Cohen",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest"
+  },
+  "keywords": [
+    "deque",
+    "dequeue",
+    "doubly-ended",
+    "doubly-ended-queue",
+    "FIFO",
+    "FILO",
+    "first-in",
+    "first-out",
+    "in-memory",
+    "data-oriented-design",
+    "slim-deque",
+    "basic-deque",
+    "cyclic-buffer",
+    "circular-buffer",
+    "data-structure",
+    "nodejs",
+    "typescript",
+    "ts",
+    "ES2020"
+  ],
+  "engines": {
+    "node": ">=14.5.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "types": "./dist/data-oriented-slim-deque.d.ts",
+  "main": "./dist/data-oriented-slim-deque.js",
+  "files": [
+    "src/",
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
+}
